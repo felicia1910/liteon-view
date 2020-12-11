@@ -1,0 +1,59 @@
+$color_black:#393939;
+$color_blue:#0E6BA7;
+$color_green_blue:#00FFEB;
+$color_white-blue:#5089CC;
+$color_bc_blue:#EDF7FF;//底層那最白的藍
+$color_red:#FF5858;
+//辨識用的底色
+$color_white_gray:#F2F2F2;
+$color_green:#E8FFF2;
+
+
+@mixin size($w,$h){
+    width: $w;
+    height: $h;
+}
+
+@mixin  flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fixed($t,$r) {
+    position: fixed;
+    top:$t;
+    right: $r;
+}
+
+@mixin dontShowWord {
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+//
+.bc-gray{
+    background-color: $color_white_gray;
+}
+.bc-green{
+    background-color: $color_green;
+}
+.text-red{
+    color:$color_red
+}
+.none{
+    display: none;
+    width: 0;
+    height: 0;
+}
+.running-box{
+    @include size(100vw,100vh);
+    background-color: rgba(255, 255, 255,.1);
+    cursor: wait;//暫定的 wait怪怪的
+    @include fixed(0,0);
+    z-index: 99;
+}
+.run{
+    cursor: wait;
+}

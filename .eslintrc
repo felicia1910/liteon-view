@@ -1,0 +1,5 @@
+{
+    "parserOptions": {
+      "ecmaVersion": 8 // 版本号要8以上才不会报eslint错
+    }
+  }

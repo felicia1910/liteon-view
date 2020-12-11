@@ -1,0 +1,215 @@
+@import "./style.scss";
+
+.top{
+    @include size(100%,35px);
+    background-color: $color_blue;
+    border-bottom:solid 10px #fff;
+}
+.top-black-box{
+    position: relative;
+}
+.top-black{
+    @include size(100%,80px);
+    background-color: $color_black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px 20px;
+}
+.user-box{
+    border-radius: 50%;
+    @include size(25px,25px);
+    background-color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    cursor: initial;
+}
+.top-icon{
+    font-size: 18px;
+    color:#fff;
+    padding: 10px;
+    @include flexCenter;
+    height: 40px;
+    cursor: pointer;
+}
+.fa-user{
+    color:$color_black;
+}
+.top-icon p{
+    margin: 0;
+}
+// 頭部左邊logo區
+.logo-bc{
+    @include size(420px,120px);
+    position: absolute;
+    left: -20px;
+    top: -10px;
+}
+.top-left-inner-box{
+    position: absolute;
+    padding: 20px;
+    top: 0;
+}
+.loge{
+    @include size(120px,24px);
+    cursor: pointer;
+}
+.top-title{
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #fff;
+    @include flexCenter;
+}
+.top-title h1{
+    font-weight: bold;
+    font-size: 34px;
+}
+.green-blue-title{
+    color: $color_green_blue;
+    border-bottom: solid 3px $color_green_blue;
+}
+.black-title{
+    padding: 3px;
+    margin-top: -2px;
+}
+
+// pageOne
+.table-main{
+    @include flexCenter;
+    @include size(100%,calc(100vh - 125px));
+    min-height: calc(800px - 125px);
+    padding: 20px;
+}
+.table-bc{
+    background-color: $color_bc_blue;
+    @include size(100%,100%);
+    min-height: 650px;
+    border-radius: 20px;
+}
+.table{
+    @include size(95%,auto);
+    background-color: #fff;
+    margin: 80px auto 10px;
+    border-radius: 20px;
+}
+.table-head{
+    @include size(100%,auto);
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr 192px;
+    background-color: $color_blue;
+    color:#fff;
+    border-radius: 20px 20px 0 0;
+}
+.table-head-small{
+    border:solid 1px #fff;
+    padding: 10px;
+    @include flexCenter;
+    @include dontShowWord;
+    text-align: center;
+}
+.table-head-small i{
+    margin-left: 3px;
+    cursor: pointer;
+}
+.dropdown{
+    border:solid 1px #fff;
+    @include flexCenter;
+}
+.dropdown-btn{
+    color:#fff;
+    @include flexCenter;
+    width: 100%;
+}
+.dropdown-btn:hover{
+    color: #eee !important;
+}
+//table-body
+.table-body-box{
+    display: grid !important;
+    grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr 192px;
+}
+.table-body{
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+.table-body-box i{
+    text-align: center;
+    cursor: pointer;
+}
+.table-body-small{
+    @include dontShowWord;
+    text-align: center;
+    padding: 15px 2px; 
+}
+
+//頁數
+.pagination{
+    @include flexCenter;
+    margin-top: 20px;
+}
+.page{
+    margin: 0 5px;
+    border-radius: 50%;
+    @include size(40px,40px);
+    padding: 8px;
+    text-align: center;
+}
+.pagination .disabled{
+    opacity: .3;
+}
+.pagination li{
+    margin: 10px;
+    @include size(40px,40px);
+    @include flexCenter;
+
+}
+.pagination .active{
+    background-color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.page-up,.page-down{
+    @include size(80px,40px);
+    padding: 8px;
+    margin: 0 10px;
+}
+//login
+.login-bc{
+    @include flexCenter;
+}
+.login-big-box h3{
+    color: $color_blue;
+    padding: 10px;
+    font-weight: bold;
+    margin: auto;
+}
+.login-big-box{
+    width: 400px;
+}
+.login-box{
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+.login-inside-box{
+    display: flex;
+}
+.login-box p{
+    width: 120px;
+    margin: 0;
+    font-size: 18px;
+}
+.login-inside-box{
+    margin: 20px;
+}
+.login-inside-box input{
+    border-bottom: solid #eee 1px;
+    font-size: 18px;
+}
+.login-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
